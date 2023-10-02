@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<module href="/components/header.html"></module>
+<body>
+    <main>
+        <form>
+            <header>
+                <section class="newEntry" id="meals">
+                    <label for="mealTime">Enter the time when you ate the meal</label>
+                    <input type="datetime-local" id="mealTime" size="40"
+                    tabindex="0" />
+                </section>
+            </header>
+            <section class="listContainer">
+                <div class="listTitle">
+                    <h2>Meal List</h2>
+                </div>
+                <hr/>
+                <div id="listMeals">
+                    <div class="item meal">
+                        <label for="1">Eggs</label>
+                        <button id="1" class="delete button textSymbol" tabindex="0">-</button>
+                    </div>
+                    <div class="item meal">
+                        <label for="2">Hamburger</label>
+                        <button id="2" class="delete button textSymbol" tabindex="0">-</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+            <section class="newEntry">
+                <label for="newMeal">Enter a new meal</label>
+                <input type="text" id="newMeal" autocomplete="on" placeholder="Add new Meal" tabindex="0">
+                <button id="addMeal" class="button add" title="Add Meal" aria-label="Add new meal to list" tabindex="0">+</button>
+            </section>
+
+            <section class="newEntry">
+                <button id="save" class="button add" title="Save Meal List" aria-label="Save meal list and return" tabindex="0">
+                    SAVE
+                </button>
+                <button id="cancel" class="button delete">
+                    CANCEL
+                </button>
+            </section>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>

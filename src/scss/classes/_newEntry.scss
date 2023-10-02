@@ -1,0 +1,26 @@
+.newEntry{
+    justify-content: space-between;
+
+    label {
+        position: absolute;
+        left: -10000px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 1.25rem;
+        border: 2px solid $textbox-bordercolor;
+        border-radius: $round-border-radius;
+        padding: 0.75rem;
+        outline: none;
+    }
+
+    input[type="datetime-local"]{
+        width: 100%;
+    }
+
+    input:focus,
+    input:hover {
+        box-shadow: 4px 2px 5px #fff;;
+    }
+}
